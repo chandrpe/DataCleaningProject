@@ -1,5 +1,26 @@
-Subject: int values
+I have downloaded and unzipped the file. set the working directory in order to work on the files
 
+Script1.
+
+I read the files X_train.txt, Y_train.txt, subject_train.txt, X_test.txt, Y_test.txt and subject_test.txt.
+Did the column bind and row bind of the data sets and merged them to a new dataset called newData.
+
+Script 2:
+
+In order to extract only the mean and standard deviation of the values, read the file, features.txt. Searched for the strings
+"mean" and "std" from the variables and added the columns subject and activity. the new dataset newData now extracts features 
+containing strings "mean" and "std" along with "subject" and "activity"
+
+desclabels - prints the names of the descriptive labels of the features to name a few:
+ [1] "tBodyAcc-mean()-X"      "tBodyAcc-mean()-Y"      "tBodyAcc-mean()-Z"      "tBodyAcc-std()-X"       "tBodyAcc-std()-Y"       "tBodyAcc-std()-Z"      
+ [7] "tBodyAcc-mad()-X"       "tBodyAcc-mad()-Y"       "tBodyAcc-mad()-Z"       "tBodyAcc-max()-X"       "tBodyAcc-max()-Y"       "tBodyAcc-max()-Z"      
+[13] "tBodyAcc-min()-X"       "tBodyAcc-min()-Y"       "tBodyAcc-min()-Z"       "tBodyAcc-sma()"         "tBodyAcc-energy()-X"    "tBodyAcc-energy()-Y"   
+[19] "tBodyAcc-energy()-Z"    "tBodyAcc-iqr()-X"       "tBodyAcc-iqr()-Y"       "tBodyAcc-iqr()-Z"       "tBodyAcc-entropy()-X"   "tBodyAcc-entropy()-Y"  
+[25] "tBodyAcc-entropy()-Z"   "tBodyAcc-arCoeff()-X,1" "tBodyAcc-arCoeff()-X,2" "tBodyAcc-arCoeff()-X,3" "tBodyAcc-arCoeff()-X,4" "tBodyAcc-arCoeff()-Y,1"
+
+Script 3:
+
+Subject: int values
 activity: Factors which has 6 values :
 WALKING
 WALKING_UPSTAIRS
@@ -8,13 +29,14 @@ SITTING
 STANDING
 LAYING
 
-desclabels - prints the names of the descriptive labels of the features to name a few:
- [1] "tBodyAcc-mean()-X"      "tBodyAcc-mean()-Y"      "tBodyAcc-mean()-Z"      "tBodyAcc-std()-X"       "tBodyAcc-std()-Y"       "tBodyAcc-std()-Z"      
- [7] "tBodyAcc-mad()-X"       "tBodyAcc-mad()-Y"       "tBodyAcc-mad()-Z"       "tBodyAcc-max()-X"       "tBodyAcc-max()-Y"       "tBodyAcc-max()-Z"      
-[13] "tBodyAcc-min()-X"       "tBodyAcc-min()-Y"       "tBodyAcc-min()-Z"       "tBodyAcc-sma()"         "tBodyAcc-energy()-X"    "tBodyAcc-energy()-Y"   
-[19] "tBodyAcc-energy()-Z"    "tBodyAcc-iqr()-X"       "tBodyAcc-iqr()-Y"       "tBodyAcc-iqr()-Z"       "tBodyAcc-entropy()-X"   "tBodyAcc-entropy()-Y"  
-[25] "tBodyAcc-entropy()-Z"   "tBodyAcc-arCoeff()-X,1" "tBodyAcc-arCoeff()-X,2" "tBodyAcc-arCoeff()-X,3" "tBodyAcc-arCoeff()-X,4" "tBodyAcc-arCoeff()-Y,1"
-> 
+Script 4:
+Gave the appropriate labels to names that are descriptive
+names(newData) will give the list of the names
+
+Script 5:
+output of the tidy data is submitted. 
+
+Note:
 
 means are calculated based on the subject and activity like:
 
